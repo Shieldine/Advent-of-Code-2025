@@ -5,7 +5,7 @@ cur = START
 count_1 = 0
 count_2 = 0
 
-with open("./input/day_1.txt") as f:
+with open("../input/day_1.txt") as f:
     for line in f:
         change = 0
         if "R" in line:
