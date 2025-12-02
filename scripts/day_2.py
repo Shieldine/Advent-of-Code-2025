@@ -51,11 +51,6 @@ def check_single_repetition(number: int) -> int:
 
 for entry in ranges:
     start, end = entry.split("-")
-    if start[0] == "0":
-        invalids_1 += int(start)
-
-    if end[0] == "0":
-        invalids_1 += int(end)
 
     for i in range(int(start), int(end) + 1):
         invalids_1 += check_single_repetition(i)
