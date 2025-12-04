@@ -22,14 +22,14 @@ for bank in banks:
         highest = 0
         dex = 0
         for idx, part in enumerate(parts):
-            if idx > len(parts) - (12-i):
+            if idx > len(parts) - (12 - i):
                 continue
             if highest < int(part):
                 highest = int(part)
                 dex = idx
 
         num[i] = str(highest)
-        parts = parts[dex+1:]
+        parts = parts[dex + 1:]
 
     joltage_2 += int(''.join(num))
 
